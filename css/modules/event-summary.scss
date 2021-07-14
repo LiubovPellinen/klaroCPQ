@@ -1,12 +1,20 @@
 .event-summary {
   position: relative;
-  padding-left: 107px;
+  padding-left: auto;
   min-height: 77px;
   padding-bottom: 1px;
   margin-bottom: 20px;
+  white-space: normal;
 
   &__title a {
-    color: #173f58;
+    color: #ffd816;
+    white-space: normal;
+    text-decoration: none;
+   
+  }
+  &__title a:hover {
+    color: #f4cb08;
+    
    
   }
 
