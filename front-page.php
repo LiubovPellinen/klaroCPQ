@@ -13,8 +13,10 @@
     <!-- The left side --> 
     <div class="full-width-split__one">
         <div class="full-width-split__inner">
-          <h2 class="headline headline--small-plus t-center">Upcoming Events</h2>
-                 
+          <h2 class="headline headline--small-plus ">Digitalize your sales processes and create more winning quotes!</h2>
+          <div style="color: #F4CB08">
+          <b>_______________________________</b>
+          </div>       
         </div>
       </div>
 
@@ -23,77 +25,75 @@
         <div class="full-width-split__inner">
           
            
-           <p>
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim ut metus vitae gravida. Duis semper sed turpis et efficitur. Nulla facilisi. Maecenas fermentum mattis mi, in fermentum felis tristique at. Nulla aliquam nibh id tempor gravida. In vulputate sapien vel nibh egestas vulputate. Donec elementum dictum sem, sed dapibus leo semper nec. Pellentesque vel facilisis velit, ut hendrerit lorem. Quisque augue tellus, gravida sit amet placerat tempor, scelerisque eu dui. Suspendisse a odio sed sapien laoreet euismod nec quis sapien. Vivamus blandit leo in leo hendrerit auctor.
-          </p>
+        <div class="generic-content">
+           <?php the_content();?>
+          </div>
 
           <p class="t-center no-margin"><a href="<?php echo site_url('/blog'); ?>" class="btn btn--yellow">Read more</a></p>
         </div>
       </div>
+     
     </div>
-
-    <!-- experiment  -->
+    <!-- test --> 
     <div class="full-width-split group">
-    <!-- The left side --> 
     <div class="full-width-split__one">
         <div class="full-width-split__inner">
-          <h2 class="headline headline--small-plus t-center">Upcoming Events</h2>
-                 
+          <h2 class="headline headline--small-plus ">Digitalize your sales processes and create more winning quotes!</h2>
+          <div style="color: #F4CB08">
+          <b>_______________________________</b>
+          </div>       
         </div>
       </div>
-
-    <!-- The right side--> 
       <div class="full-width-split__two">
         <div class="full-width-split__inner">
-          
-           
-           <p>
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim ut metus vitae gravida. Duis semper sed turpis et efficitur. Nulla facilisi. Maecenas fermentum mattis mi, in fermentum felis tristique at. Nulla aliquam nibh id tempor gravida. In vulputate sapien vel nibh egestas vulputate. Donec elementum dictum sem, sed dapibus leo semper nec. Pellentesque vel facilisis velit, ut hendrerit lorem. Quisque augue tellus, gravida sit amet placerat tempor, scelerisque eu dui. Suspendisse a odio sed sapien laoreet euismod nec quis sapien. Vivamus blandit leo in leo hendrerit auctor.
-          </p>
-
-          <p class="t-center no-margin"><a href="<?php echo site_url('/blog'); ?>" class="btn btn--yellow">Read more</a></p>
+          <h2 class="headline headline--small-plus ">Digitalize your sales processes and create more winning quotes!</h2>
+          <div style="color: #F4CB08">
+          <b>_______________________________</b>
+          </div>       
         </div>
-      </div>
-
-      <div class="full-width-split__two">
+        <div class="full-width-split__one">
         <div class="full-width-split__inner">
-          <h2 class="headline headline--small-plus t-center">XXXXX</h2>
-                 
+          <h2 class="headline headline--small-plus ">Digitalize your sales processes and create more winning quotes!</h2>
+          <div style="color: #F4CB08">
+          <b>_______________________________</b>
+          </div>       
         </div>
       </div>
+      </div>
+      
     </div>
+     <!-- test -->
 
-    <!-- experiment -->
+    
     <div class="hero-slider">
       <div data-glide-el="track" class="glide__track">
         <div class="glide__slides">
+        <?php
+        $homepagePosts=new WP_Query(array(
+          'posts_per_page' =>3
+          
+         ));
+        while ($homepagePosts->have_posts()){
+          $homepagePosts->the_post();
+        ?>
           <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('/images/bus.jpg')?>);">
             <div class="hero-slider__interior container">
               <div class="hero-slider__overlay">
-                <h2 class="headline headline--medium t-center">Free Transportation</h2>
-                <p class="t-center">All students have free unlimited bus fare.</p>
-                <p class="t-center no-margin"><a href="#" class="btn btn--blue">Learn more</a></p>
+              <div class="event-summary">
+                      <div class="event-summary__content">
+                         <h5 class="event-summary__title headline headline--tiny"><a style=" white-space: normal;" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
+                         <p style=" white-space: normal;"><?php if (has_excerpt()) {
+                                      echo get_the_excerpt();
+                                  } else {
+                                             echo wp_trim_words(get_the_content(), 18);
+                             } ?> <a href="<?php the_permalink(); ?>" class="nu gray">Learn more</a></p>
+                     </div>
+                 </div>
               </div>
             </div>
           </div>
-          <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('/images/apples.jpg')?>);">
-            <div class="hero-slider__interior container">
-              <div class="hero-slider__overlay">
-                <h2 class="headline headline--medium t-center">An Apple a Day</h2>
-                <p class="t-center">Our dentistry program recommends eating apples.</p>
-                <p class="t-center no-margin"><a href="#" class="btn btn--blue">Learn more</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('/images/bread.jpg')?>);">
-            <div class="hero-slider__interior container">
-              <div class="hero-slider__overlay">
-                <h2 class="headline headline--medium t-center">Free Food</h2>
-                <p class="t-center">Fictional University offers lunch plans for those in need.</p>
-                <p class="t-center no-margin"><a href="#" class="btn btn--blue">Learn more</a></p>
-              </div>
-            </div>
-          </div>
+         
+          <?php } ?>
         </div>
         <div class="slider__bullets glide__bullets" data-glide-el="controls[nav]"></div>
       </div>
