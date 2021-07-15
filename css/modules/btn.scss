@@ -46,12 +46,14 @@
   }
 
   &--yellow {
-    background-color: $mainYellow;
+    //background-color: $mainYellow;
+    background: linear-gradient($mainYellow, scale-color($mainYellow, $lightness: -29%, $saturation: 100%));
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.22);
   }
 
   &--yellow:hover {
-    background: linear-gradient($mainYellow, scale-color($mainYellow, $lightness: -29%, $saturation: 100%));
+    //background: linear-gradient($mainYellow, scale-color($mainYellow, $lightness: -29%, $saturation: 100%));
+    background-color: $mainYellow;
   }
 
   &--beige {

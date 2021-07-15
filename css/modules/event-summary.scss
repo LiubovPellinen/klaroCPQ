@@ -5,6 +5,8 @@
   padding-bottom: 1px;
   margin-bottom: 20px;
   white-space: normal;
+  
+  
 
   &__title a {
     color: #ffd816;
@@ -12,8 +14,14 @@
     text-decoration: none;
    
   }
+
   &__title a:hover {
     color: #f4cb08;
+    
+   
+  }
+  &__testimonial p {
+    color:white;
     
    
   }

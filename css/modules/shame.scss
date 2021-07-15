@@ -37,8 +37,9 @@
   position: relative;
   z-index: 20;
   margin: 0;
-  font-size: 1.75rem;
-  font-weight: 100;
+  font-size: 3rem;
+  font-weight: 200;
+ //background:  url(../images/logo.png) no-repeat 0px 0px;
 }
 
 .school-logo-text strong {
@@ -94,7 +95,10 @@
   color: #333;
 }
 .gray {
-  color: #999999;
+  color: #aaa7a7;
+}
+.l-yellow{
+  color: #e9c511;
 }
 
 .search-trigger {

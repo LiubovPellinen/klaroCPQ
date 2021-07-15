@@ -9,9 +9,9 @@
 <header class="site-header">
       <div class="container">
         <h1 class="school-logo-text float-left">
-          <a href="<?php echo site_url() ?>"><strong>Klaro</strong> CPQ</a>
+          <a href="<?php echo site_url() ?>"><strong>Klaro</strong>CPQ</a>
         </h1>
-        <span class="js-search-trigger site-header__search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
+        
         <i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i>
         <div class="site-header__menu group">
           <nav class="main-navigation">
@@ -25,17 +25,18 @@
           ?> -->
         
             <ul>
-              <li <?php if (is_page('about-us') or wp_get_post_parent_id(0)==16) echo 'class="current-menu-item"'?>><a href="<?php echo site_url('/about-us') ?>">Home</a></li>
-              <li <?php if (get_post_type()=='program') echo 'class="current-menu-item"'?>><a href="<?php echo get_post_type_archive_link('program');?>">Solutions</a></li>
-              <li <?php if (get_post_type()=='event' OR is_page('past-events')  ) echo 'class="current-menu-item"'?>><a href="<?php echo get_post_type_archive_link('event');?>">Knowlege Center</a></li>
-              <li <?php if (get_post_type()=='campus') echo 'class="current-menu-item"'?>><a href="<?php echo get_post_type_archive_link('campus');?>">About us</a></li>
-              <li <?php if (get_post_type()=='post') echo 'class="current-menu-item"'?>><a href="<?php echo site_url('/blog'); ?>">Blog</a></li>
+              <li <?php if (is_page('about-us') or wp_get_post_parent_id(0)==16) echo 'class="current-menu-item"'?>><a href="<?php echo site_url(); ?>"><strong>Home</strong></a></li>
+              <li <?php if (get_post_type()=='program') echo 'class="current-menu-item"'?>><a href="<?php echo get_post_type_archive_link('/solutiion');?>"><strong>Solutions</strong></a></li>
+              <li <?php if (get_post_type()=='event' OR is_page('past-events')  ) echo 'class="current-menu-item"'?>><a href="<?php echo get_post_type_archive_link('/knowlege-center');?>"><strong>Knowlege Center</strong></a></li>
+              <li <?php if (get_post_type()=='campus') echo 'class="current-menu-item"'?>><a href="<?php echo get_post_type_archive_link('/about-us');?>"><strong>About us</strong></a></li>
+              <li <?php if (get_post_type()=='post') echo 'class="current-menu-item"'?>><a href="<?php echo site_url('/blog'); ?>"><strong>Blog</strong></a></li>
+              <li <?php if (get_post_type()=='post') echo 'class="current-menu-item"'?>><a href="<?php echo site_url('/documentation'); ?>"><strong>Documentation</strong></a></li>
             </ul>
             
           </nav>
           <div class="site-header__util">
-            <a href="#" class="btn btn--small btn--orange float-left push-right">Contact us</a>
-            <span class="search-trigger js-search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
+            <a href="#" class="btn btn--small btn--yellow float-left push-right">Contact us</a>
+            
           </div>
         </div>
       </div>

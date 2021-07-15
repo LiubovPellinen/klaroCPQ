@@ -3,77 +3,71 @@
         <div class="group">
           <div class="site-footer__col-one">
             <h1 class="school-logo-text school-logo-text--alt-color">
-              <a href="<?php echo site_url() ?>"><strong>Fictional</strong> University</a>
+              <strong>Klaro</strong> CPQ
             </h1>
-            <p><a class="site-footer__link" href="#">555.555.5555</a></p>
+            
           </div>
 
           <div class="site-footer__col-two-three-group">
             <div class="site-footer__col-two">
-              <h3 class="headline headline--small">Explore</h3>
-              <nav class="nav-list">
-             <!-- Dynamic WP navigation menu example
-             <?php
-                //wp_nav_menu(array(
-                //  'theme_location' => 'footerLocationOne'
-
-               // ));
-        
-              ?>  -->
+                      
                 
-                <ul>
-                  <li ><a href="<?php echo site_url('/about-us') ?>">About Us</a></li>
-                  <li><a href="#">Programs</a></li>
-                  <li><a href="#">Events</a></li>
-                  <li><a href="#">Campuses</a></li>
+                <ul style="list-style-type: none;">
+                  <li ><p>
+                          puh. +358401766204
+                          info@klarocpq.fi
+                        </p> 
+                  </li>
+                  <li ><p>
+                          Kaisaniemenkatu 4 A (7.krs) 00100 Helsinki, Finland
+                        </p> 
+                  </li>
+                  <li ><p>
+                          Kalevantie 2 33100 Tampere, Finland
+                        </p> 
+                  </li>
+                  <li>      
+                 
+                  <li><a href="#">Tietosuojaseloste</a></li>
                 </ul>
-               
-              </nav>
+              
             </div>
 
             <div class="site-footer__col-three">
-              <h3 class="headline headline--small">Learn</h3>
-              <nav class="nav-list">
-              <!-- Dynamic WP navigation menu example
-              <?php
-                //wp_nav_menu(array(
-                //  'theme_location' => 'footerLocationTwo'
+                          
+                <ul style="list-style-type: none;">
+                  <li>
+                    <p>
+                    Y-tunnus: 2994695-9
+                    Verkkolaskutusosoite: OpusCapita Solutions Oy (E204503)
+                     OVT tunnus: 003729946959
+                    </p>
+                  </li>
+                  <li>
+                    ___
+                  </li>
+                  <li>
+                    
+                      TAI
+                    
+                  </li>
+                  <li>
+                    ___
+                  </li>
+                  <li>
+                     <p>
+                     Klaro Technology Oy (OpusCapita skannauspalvelu)
+                     PL 14600
+                     00062  LASKUTUS
+                    </p>
+                  </li>
 
-               // ));
-        
-              ?>  -->
-             
-                <ul>
-                  <li><a href="#">Legal</a></li>
-                  <li><a href="<?php echo site_url('/privacy-policy') ?>">Privacy</a></li>
-                  <li><a href="#">Careers</a></li>
                 </ul>
-              </nav>
+             
             </div>
           </div>
 
-          <div class="site-footer__col-four">
-            <h3 class="headline headline--small">Connect With Us</h3>
-            <nav>
-              <ul class="min-list social-icons-list group">
-                <li>
-                  <a href="#" class="social-color-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                  <a href="#" class="social-color-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                  <a href="#" class="social-color-youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                  <a href="#" class="social-color-linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                  <a href="#" class="social-color-instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+         
         </div>
       </div>
     </footer>
