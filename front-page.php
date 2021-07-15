@@ -34,23 +34,47 @@
 </div>
     <!-- Signs test  -->
   
-    <div class="row group" style="background-color:#f4cb08; padding-top: 50px; padding-bottom:50px;">
+    <div class="row group" style="background-color:#f4cb08; padding-top: 30px; ">
        <div style="background-color:#f4cb08;">
+       
              <div  class="one-fourth"> 
-               <img style="margin-right:auto; margin-left:auto; display:block;" src=" <?php echo get_theme_file_uri('/images/icon-maarittely.png') ?>"></img>
-               <div style="margin-right:auto; margin-left:auto; display:block;">
-               <h5 >Specification</h5>
-               </div>
-               <p>We get to know your quoting process and define the configuration rules used within the tool.</p>
+                <div style="height:100px;">
+                     <img style="margin-right:auto; margin-left:auto; display:block;" src=" <?php echo get_theme_file_uri('/images/icon-maarittely.png') ?>"></img>  
+                </div>
+                 <div style=" style="margin-right:auto; margin-left:auto; display:block;"> 
+                     <h2 style=" color:white; text-shadow: 2px 2px 2px rgba(0, 0, 0, 1); text-align: center;" >1. Specification</h2>
+                     <p style="color:white; text-shadow: 1px 1px 1px rgba(0, 0, 0, 1); font-weight:bold; text-align: center;">We get to know your quoting process and define the configuration rules used within the tool.</p>
+                  </div> 
              </div>
+
              <div class="one-fourth">
-               <img style="margin-right:auto; margin-left:auto; display:block;" src=" <?php echo get_theme_file_uri('/images/icon-mallinnus.png') ?>"></img>
-             </div>
+                 <div style="height:100px;">
+                     <img style="margin-right:auto; margin-left:auto; display:block;" src=" <?php echo get_theme_file_uri('/images/icon-mallinnus.png') ?>"></img>
+                 </div>
+                 <div style=" style="margin-right:auto; margin-left:auto; display:block;">
+                     <h2 style=" color:white; text-shadow: 2px 2px 2px rgba(0, 0, 0, 1); text-align: center;" >2. Modelling</h2>
+                     <p style="color:white; text-shadow: 1px 1px 1px rgba(0, 0, 0, 1); font-weight:bold; text-align: center;">We model your quoting process into KlaroCPQ using the agreed-upon configuration rules.</p>
+                 </div>
+             </div> 
+
              <div class="one-fourth">
-               <img style="margin-right:auto; margin-left:auto; display:block;" src=" <?php echo get_theme_file_uri('/images/icon-testaus.png') ?>"></img>
-             </div>
+                 <div style="height:100px;">
+                     <img style="margin-right:auto; margin-left:auto; display:block;" src=" <?php echo get_theme_file_uri('/images/icon-testaus.png') ?>"></img>
+                 </div>
+                 <div style=" style="margin-right:auto; margin-left:auto; display:block;">   
+                     <h2 style=" color:white; text-shadow: 2px 2px 2px rgba(0, 0, 0, 1); text-align: center;" >3. Testing</h2>
+                     <p style="color:white; text-shadow: 1px 1px 1px rgba(0, 0, 0, 1); font-weight:bold; text-align: center;">We test version 1.0 of the tool with users, gather feedback and make adjustments.</p>
+                 </div>
+            </div>
+
              <div class="one-fourth">
-               <img style="margin-right:auto; margin-left:auto; display:block;"  src=" <?php echo get_theme_file_uri('/images/icon-kaytto.png') ?>"></img>
+                 <div style="height:100px;">
+                     <img style="margin-right:auto; margin-left:auto; display:block;"  src=" <?php echo get_theme_file_uri('/images/icon-kaytto.png') ?>"></img>
+                 </div>
+                 <div style=" style="margin-right:auto; margin-left:auto; display:block;">   
+                     <h2 style=" color:white; text-shadow: 2px 2px 2px rgba(0, 0, 0, 1); text-align: center;" >4. Usage</h2>
+                     <p style="color:white; text-shadow: 1px 1px 1px rgba(0, 0, 0, 1); font-weight:bold; text-align: center;">We complete the installation and any integration work needed.</p>
+                 </div>
              </div>
        </div>
     </div>  
@@ -58,6 +82,7 @@
 
     <!-- test --> 
     <div class="full-width-split group">
+    <!-- The left side --> 
     <div class="full-width-split__one">
         <div class="full-width-split__inner">
           <h2 class="headline headline--small-plus ">Digitalize your sales processes and create more winning quotes!</h2>
@@ -65,25 +90,20 @@
           <b>_______________________________</b>
           </div>       
         </div>
-      </div>
-      <div class="full-width-split__two">
-        <div class="full-width-split__inner">
-          <h2 class="headline headline--small-plus ">Digitalize your sales processes and create more winning quotes!</h2>
-          <div style="color: #F4CB08">
-          <b>_______________________________</b>
-          </div>       
-        </div>
-        <div class="full-width-split__one">
-        <div class="full-width-split__inner">
-          <h2 class="headline headline--small-plus ">Digitalize your sales processes and create more winning quotes!</h2>
-          <div style="color: #F4CB08">
-          <b>_______________________________</b>
-          </div>       
-        </div>
-      </div>
-      </div>
-      
     </div>
+
+    <!-- The right side--> 
+    <div class="full-width-split__two">
+        <div class="full-width-split__inner">
+         
+          <div class="generic-content">
+           <?php the_content();?>
+          </div>
+          <p class="t-center no-margin"><a href="<?php echo site_url('/blog'); ?>" class="btn btn--yellow">Read more</a></p>
+        </div>
+    </div>
+     
+</div>
      <!-- test -->
 
     

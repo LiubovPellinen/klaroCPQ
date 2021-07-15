@@ -329,6 +329,8 @@ li {
 .one-fifth,
 .one-sixth {
   padding-bottom: 1.6rem;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 @media (min-width: 960px) {
@@ -343,6 +345,8 @@ li {
 .one-fifth,
 .one-sixth {
     padding-bottom: 0;
+    padding-right: 50px;
+    padding-left: 50px;
     float: left;
     box-sizing: border-box;
   }
