@@ -2,7 +2,8 @@
 get_header();
 pageBanner(array(
 'title'=>'All Testimonials',
-'subtitle'=>'See what our clients say about us'
+'subtitle'=>'See what our clients say about us',
+
 
 ));
 

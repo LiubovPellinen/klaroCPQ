@@ -15,7 +15,7 @@
     <div class="full-width-split__one">
         <div class="full-width-split__inner">
             <h2 style="color:#f4cb08; text-align:left;">THE BEST SOLUTION</h2>
-            <h1 style=text-align:left;"> KlaroCPQ</h1>
+            <h1 style="text-align:left;"> KlaroCPQ</h1>
             <div style="color:#f4cb08; font-weight:bold; text-align:left;" >_______________ </div> 
             <div>
                 <p style="color:#b3b3b3; white-spase:normal; font-style: italic; font-size: 1.5rem;">
@@ -49,7 +49,7 @@
             <div style="height:100px;">
                 <img style="margin-right:auto; margin-left:auto; display:block;" src=" <?php echo get_theme_file_uri('/images/icon-maarittely.png') ?>"></img>  
             </div>
-            <div style=" style="margin-right:auto; margin-left:auto; display:block;"> 
+            <div style="margin-right:auto; margin-left:auto; display:block;"> 
                 <h2 style=" color:white; text-shadow: 2px 2px 2px rgba(0, 0, 0, 1); text-align: center; font-family: 'Roboto Slab';" >1. Specification</h2>
                 <p style="color:white; text-shadow: 1px 1px 1px rgba(0, 0, 0, 1); font-weight:bold; text-align: center; font-family: 'Roboto Slab';">We get to know your quoting process and define the configuration rules used within the tool.</p>
             </div> 
@@ -59,7 +59,7 @@
             <div style="height:100px;">
                 <img style="margin-right:auto; margin-left:auto; display:block;" src=" <?php echo get_theme_file_uri('/images/icon-mallinnus.png') ?>"></img>
             </div>
-            <div style=" style="margin-right:auto; margin-left:auto; display:block;">
+            <div style="margin-right:auto; margin-left:auto; display:block;">
                 <h2 style=" color:white; text-shadow: 2px 2px 2px rgba(0, 0, 0, 1); text-align: center; font-family: 'Roboto Slab';" >2. Modelling</h2>
                 <p style="color:white; text-shadow: 1px 1px 1px rgba(0, 0, 0, 1); font-weight:bold; text-align: center; font-family: 'Roboto Slab';">We model your quoting process into KlaroCPQ using the agreed-upon configuration rules.</p>
             </div>
@@ -69,7 +69,7 @@
             <div style="height:100px;">
                 <img style="margin-right:auto; margin-left:auto; display:block;" src=" <?php echo get_theme_file_uri('/images/icon-testaus.png') ?>"></img>
             </div>
-            <div style=" style="margin-right:auto; margin-left:auto; display:block;">   
+            <div style="margin-right:auto; margin-left:auto; display:block;">   
                 <h2 style=" color:white; text-shadow: 2px 2px 2px rgba(0, 0, 0, 1); text-align: center; font-family: 'Roboto Slab';" >3. Testing</h2>
                 <p style="color:white; text-shadow: 1px 1px 1px rgba(0, 0, 0, 1); font-weight:bold; text-align: center; font-family: 'Roboto Slab';">We test version 1.0 of the tool with users, gather feedback and make adjustments.</p>
             </div>
@@ -79,7 +79,7 @@
             <div style="height:100px;">
                 <img style="margin-right:auto; margin-left:auto; display:block;"  src=" <?php echo get_theme_file_uri('/images/icon-kaytto.png') ?>"></img>
             </div>
-            <div style=" style="margin-right:auto; margin-left:auto; display:block;">   
+            <div style="margin-right:auto; margin-left:auto; display:block;">   
                 <h2 style=" color:white; text-shadow: 2px 2px 2px rgba(0, 0, 0, 1); text-align: center; font-family: 'Roboto Slab';" >4. Usage</h2>
                 <p style="color:white; text-shadow: 1px 1px 1px rgba(0, 0, 0, 1); font-weight:bold; text-align: center; font-family: 'Roboto Slab';">We complete the installation and any integration work needed.</p>
             </div>

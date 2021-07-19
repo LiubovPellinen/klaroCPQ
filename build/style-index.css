@@ -31,6 +31,33 @@ li {
   line-height: 1.65;
 }
 
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 1px solid #ddd;
+}
+
+.pagination span {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 1px solid #ddd;
+  background-color: #f4cb08;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
 .container {
   max-width: 1300px;
   margin: 0 auto;
@@ -337,6 +364,26 @@ li {
   padding-left: 50px;
 }
 
+.one-fourth-blog {
+  padding-top: 1.6rem;
+  margin-top: 30px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: #bebebe;
+  margin-left: 4%;
+  margin-right: 4%;
+  height: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  white-space: normal;
+  float: left;
+  box-sizing: border-box;
+}
+.one-fourth-blog ul {
+  list-style-type: none;
+  padding-left: 5px;
+}
+
 @media (min-width: 960px) {
   .row {
     margin-right: -50px;
@@ -367,7 +414,7 @@ li {
     width: 33.33%;
   }
 
-  .one-fourth {
+  .one-fourth, .one-fourth-blog {
     width: 25%;
   }
 
@@ -1020,11 +1067,11 @@ body.login {
   z-index: 2;
 }
 .page-banner__title {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Slab", serif;
   font-weight: 300;
   font-size: 3.6rem;
   margin: 0 0 1rem 0;
-  color: #fff;
+  color: #f4cb08;
 }
 @media (min-width: 530px) {
   .page-banner__title {

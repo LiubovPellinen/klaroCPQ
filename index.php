@@ -6,30 +6,50 @@ pageBanner(array(
 ));
 ?>
 
-<div class="container container--narrow page-section">
+<div class="row group">
      
     <?php
         while (have_posts()){
             the_post(); 
+            $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
     ?>
-            <div class="post-item">
-                <h2 class="headline headline--medium headline--post-title"><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h2>
-                <div class="metabox">
-                    <p>Posted by <?php the_author_posts_link(); ?> on <?php the_time('n.j.y'); ?> in <?php echo get_the_category_list(', ');?></p>
-                </div>
-                <div class="generic-content">
-                    <?php the_excerpt();?>
-                    <p><a class="btn btn--blue" href="<?php the_permalink(); ?>"> Continue reading &raquo</a></p>
-               </div>
-           
-            </div>
+        <div  class="one-fourth-blog"> 
+            <ul>
+            <li>
+                <img src="<?php echo $backgroundImg[0]; ?>"></img>  
+        </li>
+            <li > 
+                <h2 style=" color:white;  text-align: left; font-family: 'Roboto Slab';" ><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                <p style="text-align: left; font-family: 'Roboto Slab'; margin-top: 5px;"><?php if (has_excerpt()) {
+                                            echo get_the_excerpt();
+                                         } else {
+                                               echo wp_trim_words(get_the_content(), 30);
+                                        } 
+                                      ?></p>
+            </li> 
+            </ul>
+        </div>
 
 <?php   }
 
-    echo paginate_links();
+    
 ?>
 </div>
-<?php get_footer();
+<div style="text-align:center; margin-top:30px;">
+<?php 
+$pages=paginate_links( array('type'  => 'array'));
+if( is_array( $pages ) ) {
+    
+    echo '<div class="pagination">';
+    foreach ( $pages as $page ) {
+      echo $page;
+    }
+   echo '</div>';
+    } ?>
+</div>
+
+<?php
+get_footer();
 
 
-?>
+?> 
