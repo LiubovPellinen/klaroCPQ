@@ -103,7 +103,7 @@
         <div class="full-width-split__inner">
          
             <div class="generic-content">
-                <?php the_content();?>
+                <?php echo get_field('aditional_text_block');?>
             </div>
             <p class="t-center no-margin"><a href="<?php echo site_url('/blog'); ?>" class="btn btn--yellow">Read more</a></p>
         </div>
