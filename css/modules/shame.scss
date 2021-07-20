@@ -98,7 +98,8 @@
   color: #aaa7a7;
 }
 .l-yellow{
-  color: #e9c511;
+  color: #f8d31c;
+  font-family: 'Roboto Slab', serif;
 }
 
 .search-trigger {
@@ -193,17 +194,26 @@
   border-color: rgb(190, 190, 190);
   margin-left:4%;
   margin-right: 4%;
-  height: 100%;
+  font-family: 'Roboto Slab';
   padding-left: 5px;
   padding-right: 5px;
   white-space: normal;
   float: left;
     box-sizing: border-box;
-    ul{ list-style-type: none;
+    ul { list-style-type: none;
         padding-left:5px;
-        
-
     }
+    a {
+      text-decoration:none;
+     
+    } 
+    img {
+         width:100%;
+    } 
+    h2, p {
+      text-align: left;
+    }
+   
 }
 
 @include atMedium {

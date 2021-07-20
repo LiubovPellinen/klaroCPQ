@@ -25,12 +25,12 @@
           ?> -->
         
             <ul>
-              <li <?php if (is_page('about-us') or wp_get_post_parent_id(0)==16) echo 'class="current-menu-item"'?>><a href="<?php echo site_url(); ?>"><strong>Home</strong></a></li>
-              <li <?php if (get_post_type()=='program') echo 'class="current-menu-item"'?>><a href="<?php echo get_post_type_archive_link('/solutiion');?>"><strong>Solutions</strong></a></li>
-              <li <?php if (get_post_type()=='event' OR is_page('past-events')  ) echo 'class="current-menu-item"'?>><a href="<?php echo get_post_type_archive_link('/knowlege-center');?>"><strong>Knowlege Center</strong></a></li>
-              <li <?php if (get_post_type()=='campus') echo 'class="current-menu-item"'?>><a href="<?php echo get_post_type_archive_link('/about-us');?>"><strong>About us</strong></a></li>
+              <li <?php if (is_page('home') ) echo 'class="current-menu-item"'?>><a href="<?php echo site_url(); ?>"><strong>Home</strong></a></li>
+              <li <?php if (is_page('solutions')) echo 'class="current-menu-item"'?>><a href="<?php echo site_url('/solutions')?>"><strong>Solutions</strong></a></li>
+              <li <?php if (is_page('knowlege-center')) echo 'class="current-menu-item"'?>><a href="<?php echo site_url('/knowlege-center');?>"><strong>Knowlege Center</strong></a></li>
+              <li <?php if (is_page('about-us')) echo 'class="current-menu-item"'?>><a href="<?php echo site_url('/about-us');?>"><strong>About us</strong></a></li>
               <li <?php if (get_post_type()=='post') echo 'class="current-menu-item"'?>><a href="<?php echo site_url('/blog'); ?>"><strong>Blog</strong></a></li>
-              <li <?php if (get_post_type()=='') echo 'class="current-menu-item"'?>><a href="<?php echo site_url('/documentation'); ?>"><strong>Documentation</strong></a></li>
+              <li <?php if (is_page('documentation')) echo 'class="current-menu-item"'?>><a href="<?php echo site_url('/documentation'); ?>"><strong>Documentation</strong></a></li>
             </ul>
             
           </nav>

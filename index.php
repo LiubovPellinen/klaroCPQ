@@ -6,8 +6,7 @@ pageBanner(array(
 ));
 ?>
 
-<div class="row group">
-     
+<div class="row group" >
     <?php
         while (have_posts()){
             the_post(); 
@@ -15,26 +14,28 @@ pageBanner(array(
     ?>
         <div  class="one-fourth-blog"> 
             <ul>
-            <li>
-                <img src="<?php echo $backgroundImg[0]; ?>"></img>  
-        </li>
-            <li > 
-                <h2 style=" color:white;  text-align: left; font-family: 'Roboto Slab';" ><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                <p style="text-align: left; font-family: 'Roboto Slab'; margin-top: 5px;"><?php if (has_excerpt()) {
-                                            echo get_the_excerpt();
-                                         } else {
-                                               echo wp_trim_words(get_the_content(), 30);
-                                        } 
-                                      ?></p>
-            </li> 
+                <li>
+                    <img  src="<?php echo $backgroundImg[0]; ?>"></img>  
+                </li>
+
+                <li > 
+                    <h2><a  href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                    <p>
+                        <?php if (has_excerpt()) { echo get_the_excerpt();}
+                              else { echo wp_trim_words(get_the_content(), 30);} 
+                        ?> 
+                    </p>
+
+                    <p><a href="<?php the_permalink(); ?>" class="l-yellow">Read more</a></p>
+                </li> 
             </ul>
         </div>
 
-<?php   }
-
-    
-?>
+    <?php }?>
+                                                    
 </div>
+                                
+   
 <div style="text-align:center; margin-top:30px;">
 <?php 
 $pages=paginate_links( array('type'  => 'array'));
