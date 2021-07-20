@@ -5,6 +5,7 @@
   display: inline-block;
   margin-bottom: 30px;
   box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.07);
+  font-family: 'Roboto Slab', serif;
 
   &--position-up {
     position: absolute;
@@ -22,7 +23,7 @@
 
   p {
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: adjust-color($beige, $lightness: -45%, $saturation: -33%);
   }
 
@@ -37,16 +38,18 @@
   }
 
   & &__blog-home-link {
-    background-color: $mainBlue;
-    color: #fff;
+    background-color: $mainYellow;
+    color: white;
+    
+    font-weight:bold;
     display: inline-block;
     padding: 10px 15px;
     border-radius: 3px 0 0 3px;
-    font-weight: normal;
+    
   }
 
   & &__blog-home-link:hover {
     text-decoration: none;
-    background-color: adjust-color($mainBlue, $lightness: -5%);
+    background-color: adjust-color($mainYellow, $lightness: -10%);
   }
 }

@@ -43,7 +43,7 @@
 <div class="row group" style="background-color:#f4cb08; ">
     <div style="background-color:#f4cb08;">
         <div style="margin-bottom: 30px; margin-top:0px;">
-        <h1 style="font-size: 3rem; color:white; text-shadow: 2px 2px 2px rgba(0, 0, 0, 1); text-align: center; font-family: 'Roboto Slab';" >How KlaroCPQ is implemented</h1>
+        <h1 style="font-size: 3rem; color:white; text-shadow: 2px 2px 2px rgba(0, 0, 0, 1); text-align: center; font-family: 'Roboto Slab', serif;" >How KlaroCPQ is implemented</h1>
         </div>
         <div  class="one-fourth"> 
             <div style="height:100px;">

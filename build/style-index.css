@@ -626,18 +626,18 @@ body.login {
   background: linear-gradient(#12518d, #0D3B66);
 }
 .btn--yellow {
-  background: linear-gradient(#F4D35E, #f0bb00);
+  background: linear-gradient(#f5cd3e, #daaa00);
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.22);
 }
 .btn--yellow:hover {
-  background-color: #F4D35E;
+  background-color: #f5cd3e;
 }
 .btn--beige {
   background-color: #FAF0CA;
   color: #173f58;
 }
 .btn--beige:hover {
-  background-color: #F4D35E;
+  background-color: #f5cd3e;
 }
 .btn--gray {
   background-color: #222;
@@ -1582,7 +1582,7 @@ body.admin-bar .search-overlay {
   opacity: 0.75;
 }
 .event-summary__date--beige {
-  background-color: #F4D35E;
+  background-color: #f5cd3e;
 }
 .event-summary__month {
   display: block;
@@ -1681,6 +1681,7 @@ body.admin-bar .search-overlay {
   display: inline-block;
   margin-bottom: 30px;
   box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.07);
+  font-family: "Roboto Slab", serif;
 }
 .metabox--position-up {
   position: absolute;
@@ -1695,7 +1696,7 @@ body.admin-bar .search-overlay {
 }
 .metabox p {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   color: #a79038;
 }
 .metabox a {
@@ -1707,16 +1708,16 @@ body.admin-bar .search-overlay {
   text-decoration: underline;
 }
 .metabox .metabox__blog-home-link {
-  background-color: #0D3B66;
-  color: #fff;
+  background-color: #f5cd3e;
+  color: white;
+  font-weight: bold;
   display: inline-block;
   padding: 10px 15px;
   border-radius: 3px 0 0 3px;
-  font-weight: normal;
 }
 .metabox .metabox__blog-home-link:hover {
   text-decoration: none;
-  background-color: #0a2e4f;
+  background-color: #f2c00e;
 }
 
 .post-item {
