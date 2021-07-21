@@ -24,7 +24,10 @@ pageBanner(array(
 ?>
 
 </div>
-<?php get_footer();
+
+<?php 
+get_template_part('template-parts/content', 'carousel-posts');
+get_footer();
 
 
 ?>

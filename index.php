@@ -6,7 +6,11 @@ pageBanner(array(
 ));
 ?>
 
-<div class="row group" >
+<div style="  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+    width: 100%;" >
     <?php
         while (have_posts()){
             the_post(); 

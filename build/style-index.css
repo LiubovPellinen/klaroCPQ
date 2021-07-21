@@ -373,38 +373,52 @@ blockquote {
   padding-left: 50px;
 }
 
-.one-fourth-blog {
+.one-fourth-blog, .one-third-testimonials {
   padding-top: 1.6rem;
+  padding-left: 5px;
+  padding-right: 5px;
   margin-top: 30px;
+  margin-left: 4%;
+  margin-right: 4%;
   border-style: solid;
   border-width: 4px;
   border-color: #bebebe;
-  margin-left: 4%;
-  margin-right: 4%;
   font-family: "Roboto Slab";
-  padding-left: 5px;
-  padding-right: 5px;
   white-space: normal;
   float: left;
   box-sizing: border-box;
 }
-.one-fourth-blog ul {
+.one-fourth-blog ul, .one-third-testimonials ul {
   list-style-type: none;
   padding-left: 5px;
 }
-.one-fourth-blog a {
+.one-fourth-blog a, .one-third-testimonials a {
   text-decoration: none;
 }
-.one-fourth-blog img {
+.one-fourth-blog img, .one-third-testimonials img {
   width: 100%;
 }
-.one-fourth-blog h2, .one-fourth-blog p {
+.one-fourth-blog h2, .one-fourth-blog p, .one-third-testimonials h2, .one-third-testimonials p {
   text-align: left;
+}
+
+.one-third-testimonials a {
+  color: #f4cb08;
+}
+.one-third-testimonials p {
+  color: white;
+}
+
+.row {
+  background-color: #f4cb08;
+  /* for yellow-part of front-page */
 }
 
 @media (min-width: 960px) {
   .row {
     margin-right: -50px;
+    background-color: #f4cb08;
+    /* for yellow-part of front-page  */
   }
 
   .one-half,
@@ -428,7 +442,7 @@ blockquote {
     width: 50%;
   }
 
-  .one-third {
+  .one-third, .one-third-testimonials {
     width: 33.33%;
   }
 
@@ -1728,6 +1742,78 @@ body.admin-bar .search-overlay {
 .post-item:last-of-type {
   border-bottom: none;
   margin-bottom: 0;
+}
+
+.testimonials-part {
+  background-color: #2c2c2c;
+  padding-top: 10px;
+  font-family: "Roboto Slab";
+}
+
+.testimonials-part h1 {
+  color: white;
+  text-align: center;
+}
+
+.testimonials-part h2 {
+  color: #f4cb08;
+  text-align: center;
+}
+
+.testimonials-part .line {
+  color: #f4cb08;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Roboto Condensed";
+}
+
+.testimonials-content {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+.title-on-yellow-main {
+  margin-bottom: 30px;
+  margin-top: 0px;
+}
+
+.title-on-yellow-main h1 {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+}
+
+.pic-on-yellow {
+  height: 100px;
+}
+
+.pic-on-yellow img {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+.text-on-yellow {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  color: white;
+  text-align: center;
+  font-family: "Roboto Slab";
+}
+
+.text-on-yellow h2 {
+  text-shadow: 2px 2px 2px black;
+}
+
+.text-on-yellow p {
+  text-shadow: 1px 1px 1px black;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style-index.css.map*/

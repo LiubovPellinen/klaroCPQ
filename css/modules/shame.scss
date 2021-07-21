@@ -184,19 +184,20 @@
   padding-bottom: 1.6rem;
   padding-right: 50px;
   padding-left: 50px;
- 
-}
-.one-fourth-blog{
+  
+}  
+
+.one-fourth-blog, .one-third-testimonials{
   padding-top:1.6rem;
+  padding-left: 5px;
+  padding-right: 5px;
   margin-top:30px;
+  margin-left:4%;
+  margin-right: 4%;
   border-style: solid;
   border-width: 4px;
   border-color: rgb(190, 190, 190);
-  margin-left:4%;
-  margin-right: 4%;
   font-family: 'Roboto Slab';
-  padding-left: 5px;
-  padding-right: 5px;
   white-space: normal;
   float: left;
     box-sizing: border-box;
@@ -213,19 +214,32 @@
     h2, p {
       text-align: left;
     }
+
+}
+.one-third-testimonials{
+  a {
+    color:#f4cb08;
    
+  }
+  p {
+    color: white;
+  }  
 }
 
+.row{
+  background-color: #f4cb08; /* for yellow-part of front-page */
+  
+}
 @include atMedium {
   .row {
     margin-right: -50px;
+    background-color: #f4cb08; /* for yellow-part of front-page  */
   }
-
+  
   .one-half,
   .one-third,
   .two-thirds,
   .one-fourth,
-  
   .one-fifth,
   .one-sixth {
     padding-bottom: 0;
@@ -235,17 +249,17 @@
     box-sizing: border-box;
     
   }
-
+  
   .two-thirds {
     width: 66.66%;
   }
   .one-half {
     width: 50%;
   }
-  .one-third {
+  .one-third, .one-third-testimonials {
     width: 33.33%;
   }
-  .one-fourth,.one-fourth-blog {
+  .one-fourth,.one-fourth-blog{
     width: 25%;
   }
   .one-quarter {
