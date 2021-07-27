@@ -83,8 +83,9 @@
 }
 
 .c-orange {
-  color: $darkOrange;
+  color: $lightOrange;
 }
+
 .c-blue {
   color: $mainBlue;
 }
@@ -197,7 +198,7 @@
   border-style: solid;
   border-width: 4px;
   border-color: rgb(190, 190, 190);
-  font-family: 'Roboto Slab';
+  font-family: 'Arial';
   white-space: normal;
   float: left;
     box-sizing: border-box;
@@ -210,30 +211,36 @@
     } 
     img {
          width:100%;
+    }
+    h2{
+      font-family: 'Titillium Web', sans-serif;
     } 
     h2, p {
       text-align: left;
+
     }
 
 }
 .one-third-testimonials{
-  a {
-    color:#f4cb08;
-   
+  border-color: white;
+  h2 a {
+      color: $lightBlue;
+       
   }
   p {
     color: white;
+    font-family: 'Arial';
   }  
 }
 
 .row{
-  background-color: #f4cb08; /* for yellow-part of front-page */
+  background-color: #00a3ed; /* for yellow-part of front-page */
   
 }
 @include atMedium {
   .row {
     margin-right: -50px;
-    background-color: #f4cb08; /* for yellow-part of front-page  */
+    background-color: #00a3ed; /* for yellow-part of front-page  */
   }
   
   .one-half,

@@ -2,7 +2,14 @@
     
     <div class="full-width-split__one">
         <div class="full-width-split__inner">
-            <iframe src="https://player.vimeo.com/video/264384442" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            <?php
+            $link=get_field('link_to_video');
+            $replace="player.";
+            $link=substr_replace($link,$replace,8,0);
+            $replace="video/";
+            $link=substr_replace($link,$replace,25,0);
+            ?>
+            <iframe src="<?php echo $link ?>" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
 
@@ -10,9 +17,12 @@
         <div class="full-width-split__inner">
          
             <div class="generic-content">
-                <?php echo get_field('aditional_text_block');?>
+                <p>
+                <?php echo get_field('description_video');?>
+                </p>
             </div>
-            <p class="t-center no-margin"><a href="<?php echo site_url('/blog'); ?>" class="btn btn--yellow">Read more</a></p>
+             <?php if (get_post_type()!='video') { ?> <p class="t-center no-margin"><a href="<?php echo get_post_type_archive_link('video');?>" class="btn btn--yellow">All video</a></p>
+            <?php } ?>
         </div>
     </div>
      

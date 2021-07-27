@@ -11,6 +11,6 @@ pageBanner();
 
 <?php 
 
-get_template_part('template-parts/content', 'carousel-posts');
+get_template_part('template-parts/content', 'slider-posts');
 get_footer(); 
 ?> 

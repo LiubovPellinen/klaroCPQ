@@ -14,7 +14,7 @@ pageBanner(array(
     <?php
         while (have_posts()){
             the_post(); 
-            get_template_part('template-parts/content','event');
+            get_template_part('template-parts/content','archive-testimonials');
             ?>
             <hr class="section-breack">
          
@@ -26,7 +26,7 @@ pageBanner(array(
 </div>
 
 <?php 
-get_template_part('template-parts/content', 'carousel-posts');
+get_template_part('template-parts/content', 'slider-posts');
 get_footer();
 
 

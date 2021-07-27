@@ -31,10 +31,8 @@ function pageBanner($args = NULL) {
 function university_files() {
   wp_enqueue_script('googleMap', '//maps.googleapis.com/maps/api/js?key=AIzaSyDin3iGCdZ7RPomFLyb2yqFERhs55dmfTI', NULL, '1.0', true);
   wp_enqueue_script('main-university-js', get_theme_file_uri('/build/index.js'), array('jquery'), '1.0', true);
-  wp_enqueue_style('custom-google-fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i',
-                                   '//fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap'
-                   
-                   
+  wp_enqueue_style('custom-google-fonts', '//fonts.googleapis.com/css?family=Roboto:500|Titillium+Web:400,400i,600,700' 
+                                      
                    );
   wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
   wp_enqueue_style('klaro_main_styles', get_theme_file_uri('/build/style-index.css'));
@@ -95,5 +93,19 @@ function university_adjust_queries($query){
 }
 
 add_action('pre_get_posts','university_adjust_queries');
+
+function klaro_custom_logo_setup() {
+  $defaults = array(
+      'height'               => 60,
+      'width'                => 60,
+      'flex-height'          => true,
+      'flex-width'           => true,
+      'header-text'          => array( 'site-title', 'site-description' ),
+      'unlink-homepage-logo' => true, 
+  );
+
+  add_theme_support( 'custom-logo', $defaults );
+}
+add_theme_support( 'custom-logo' );
 
 ?>

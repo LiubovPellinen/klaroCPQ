@@ -6,15 +6,11 @@ pageBanner(array(
 ));
 ?>
 
-<div style="  justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 30px;
-    width: 100%;" >
+<div class="blog-block-center">
     <?php
         while (have_posts()){
             the_post(); 
-            $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
+            $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID),'blogOnePost', 'full' );
     ?>
         <div  class="one-fourth-blog"> 
             <ul>
@@ -30,7 +26,7 @@ pageBanner(array(
                         ?> 
                     </p>
 
-                    <p><a href="<?php the_permalink(); ?>" class="l-yellow">Read more</a></p>
+                    <p><a href="<?php the_permalink(); ?>" class="c-orange">Read more</a></p>
                 </li> 
             </ul>
         </div>
@@ -40,21 +36,9 @@ pageBanner(array(
 </div>
                                 
    
-<div style="text-align:center; margin-top:30px;">
-<?php 
-$pages=paginate_links( array('type'  => 'array'));
-if( is_array( $pages ) ) {
-    
-    echo '<div class="pagination">';
-    foreach ( $pages as $page ) {
-      echo $page;
-    }
-   echo '</div>';
-    } ?>
-</div>
+
 
 <?php
+get_template_part('template-parts/content', 'pagination'); 
 get_footer();
-
-
 ?> 

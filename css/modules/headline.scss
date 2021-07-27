@@ -4,9 +4,14 @@
   //font-family: 'Noto Sans JP', sans-serif;
   //font-family: 'Raleway', sans-serif;
   //font-family: 'Qahiri', sans-serif;
-  font-family: 'Roboto Slab', serif;
-  font-size: 150px;
-  font-weight: 400;
+  font-family: 'Titillium Web', Arial,sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: inherit;
+  text-rendering: optimizeLegibility;
+
+  //font-size: 150px;
+  font-weight: 700;
 
   &--large {
     font-size: 3.6rem;
@@ -18,12 +23,12 @@
   &--large-medium {
     font-size: 4rem;
     margin: 0 0 1rem 0;
-    color: #ffd816;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+    color: white;
+    //text-shadow: 1px 1px 1px rgb(255, 255, 255);
   }
 
   &--medium {
-    color: #ffd816;
+    color: #fe5000;
     font-size: 1.9rem;
     margin-bottom: 0.75rem;
     @include atSmall {
@@ -41,6 +46,7 @@
   &--small {
     font-size: 1.2rem;
     margin-bottom: 1.9rem;
+    color: #00a3ed;
     @include atSmall {
       font-size: 1.6875rem;
     }
@@ -51,8 +57,8 @@
   }
 
   &--tiny {
-    //font-family: "Roboto", sans-serif;
-    font-family: 'Roboto Slab';
+    
+    font-family: 'Titillium Web', Arial,sans-serif; 
     font-size: 1.5rem;
     margin-bottom: 0.25rem;
     

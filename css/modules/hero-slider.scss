@@ -1,6 +1,25 @@
+.slider-title{
+  margin-bottom: 30px;
+  font-family: 'Titillium Web', sans-serif;
+  h2{ 
+      color:#fe5000;
+      text-align:center;
+  }
+  h1{ 
+      text-align:center;
+      color:$mainBlue;
+  }
+  .line{
+      color:#fe5000;
+      font-weight:bold;
+      text-align:center;
+      font-family: Arial;
+  }
+}
+
 .hero-slider {
   position: relative;
-  background-color:#f4cb08;
+  
   div {
     outline: none;
   }
@@ -31,6 +50,7 @@
     }
   }
 }
+
 
 .slick-dots {
   z-index: 100;
@@ -111,3 +131,4 @@
     background-color: #fff;
   }
 }
+
