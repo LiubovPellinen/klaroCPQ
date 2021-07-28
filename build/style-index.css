@@ -207,7 +207,7 @@ blockquote {
   margin-bottom: 0;
 }
 
-.school-logo-text {
+.klaro-logo-text {
   position: relative;
   z-index: 20;
   margin: 0;
@@ -215,19 +215,19 @@ blockquote {
   font-weight: 200;
 }
 
-.school-logo-text strong {
+.klaro-logo-text strong {
   font-weight: 400;
 }
 
-.school-logo-text a {
+.klaro-logo-text a {
   color: #fff;
   text-decoration: none;
 }
 
-.school-logo-text--alt-color a {
+.klaro-logo-text--alt-color a {
   color: #666;
 }
-.school-logo-text--alt-color a:hover {
+.klaro-logo-text--alt-color a:hover {
   color: #1B365D;
   text-decoration: underline;
 }
@@ -578,37 +578,6 @@ blockquote {
   opacity: 0;
 }
 
-/* Customize Login Screen */
-body.login .button-primary {
-  background-color: #F95738;
-  border-color: #f83e1a;
-  text-shadow: 0 -1px 1px #f8320c, 1px 0 1px #f8320c, 0 1px 1px #f8320c, -1px 0 1px #f8320c;
-  box-shadow: 0 1px 0 #ed2c07;
-}
-
-body.login .button-primary:active,
-body.login .button-primary:focus,
-body.login .button-primary:hover {
-  background-color: #f8411d;
-  border-color: #F95738;
-  text-shadow: 0 -1px 1px #ed2c07, 1px 0 1px #ed2c07, 0 1px 1px #ed2c07, -1px 0 1px #ed2c07;
-  box-shadow: 0 1px 0 #de2907;
-}
-
-body.login {
-  background-color: #FAF0CA;
-}
-
-.login h1 a {
-  color: #1B365D;
-  font-size: 30px;
-  font-weight: 300;
-  background-image: none;
-  width: auto;
-  height: auto;
-  text-indent: 0;
-}
-
 .btn {
   display: inline-block;
   cursor: pointer;
@@ -686,174 +655,6 @@ body.login {
   background-color: transparent;
   cursor: default;
   color: #333;
-}
-
-/* My Notes */
-.edit-note,
-.delete-note,
-.submit-note {
-  font-size: 0.9rem;
-  background-color: #eee;
-  padding: 8px 16px;
-  display: inline-block;
-  margin-right: 7px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.submit-note {
-  color: #fff;
-  border: none;
-  background-color: #F95738;
-  line-height: 1.65;
-}
-
-.submit-note:hover {
-  background-color: #dd3f21;
-}
-
-@media (min-width: 635px) {
-  .edit-note,
-.delete-note {
-    position: relative;
-    top: -12px;
-  }
-}
-
-.edit-note:hover,
-.delete-note:hover {
-  background-color: #ddd;
-}
-
-.delete-note {
-  color: red;
-}
-
-.update-note {
-  visibility: hidden;
-}
-
-.update-note--visible {
-  visibility: visible;
-}
-
-.note-title-field {
-  width: 40%;
-  font-size: 1.85rem;
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: 300;
-  color: #1B365D;
-  border: 1px solid transparent;
-  padding: 7px;
-  outline: none;
-  position: relative;
-  top: 1px;
-}
-@media (max-width: 400px) {
-  .note-title-field {
-    width: 100%;
-  }
-}
-@media (min-width: 635px) {
-  .note-title-field {
-    width: 65%;
-    font-size: 3.125rem;
-  }
-}
-
-.note-body-field {
-  color: #333;
-  font-family: "Roboto", sans-serif;
-  resize: none;
-  display: block;
-  width: 100%;
-  line-height: 1.65;
-  font-size: 1.15rem;
-  padding: 7px;
-  border: 1px solid transparent;
-  height: 175px;
-  outline: none;
-}
-
-.note-active-field {
-  border: 1px solid #ddd;
-  -webkit-animation: pulseBorder 0.75s alternate infinite;
-          animation: pulseBorder 0.75s alternate infinite;
-}
-
-@-webkit-keyframes pulseBorder {
-  0% {
-    border: 1px solid #fff;
-  }
-  100% {
-    border: 1px solid #ccc;
-  }
-}
-
-@keyframes pulseBorder {
-  0% {
-    border: 1px solid #fff;
-  }
-  100% {
-    border: 1px solid #ccc;
-  }
-}
-/* Create Note */
-.create-note {
-  background-color: #ddd;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-.new-note-title {
-  width: 100%;
-  padding: 10px;
-  font-family: "Roboto", sans-serif;
-  border: none;
-  margin-bottom: 10px;
-  font-size: 1.15rem;
-  box-sizing: border-box;
-}
-
-.new-note-body {
-  width: 100%;
-  box-sizing: border-box;
-  resize: none;
-  padding: 10px;
-  font-family: "Roboto", sans-serif;
-  border: none;
-  margin-bottom: 10px;
-  height: 170px;
-  font-size: 1.15rem;
-  line-height: 1.65;
-}
-
-/* Reveal and Hide Fade Transitions */
-#my-notes {
-  position: relative;
-}
-
-#my-notes li {
-  transition: all 0.4s ease-out;
-  opacity: 1;
-}
-
-#my-notes li.fade-out {
-  height: 0px !important;
-  overflow: hidden !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  opacity: 0.5;
-}
-
-#my-notes li.fade-in-calc {
-  padding: 0 !important;
-  margin: 0 !important;
-  border: none !important;
-  position: absolute;
-  left: 0;
-  right: 0;
-  opacity: 0;
 }
 
 .site-header {
@@ -1282,165 +1083,6 @@ body.login {
   background-color: #fff;
 }
 
-.search-overlay {
-  overflow-y: auto;
-  overflow-x: hidden;
-  z-index: 110;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(255, 255, 255, 0.96);
-  visibility: hidden;
-  opacity: 0;
-  transform: scale(1.09);
-  transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
-  box-sizing: border-box;
-}
-.search-overlay p {
-  padding-top: 15px;
-}
-.search-overlay .post-summary p {
-  padding-top: 0;
-}
-.search-overlay .post-summary {
-  margin-bottom: 0;
-  margin-top: 20px;
-}
-body.admin-bar .search-overlay {
-  top: 32px;
-}
-.search-overlay__top {
-  background-color: rgba(0, 0, 0, 0.12);
-}
-.search-overlay__icon {
-  margin-right: 10px;
-  font-size: 1.8rem;
-  color: #F95738;
-}
-@media (min-width: 960px) {
-  .search-overlay__icon {
-    font-size: 2.5rem;
-  }
-}
-.search-overlay--active {
-  visibility: visible;
-  opacity: 1;
-  transform: scale(1);
-}
-.search-overlay__section-title {
-  margin: 30px 0 1px 0;
-  font-weight: 400;
-  color: #1B365D;
-  font-size: 2rem;
-  padding: 15px 0;
-  border-bottom: 1px solid #ccc;
-}
-.search-overlay__close {
-  position: absolute;
-  top: 13px;
-  right: 16px;
-  font-size: 2.1rem;
-  cursor: pointer;
-  transition: all 0.3s;
-  background-color: #fff;
-  color: #F95738;
-  line-height: 0.7;
-}
-@media (min-width: 530px) {
-  .search-overlay__close {
-    top: 18px;
-    font-size: 2.1rem;
-  }
-}
-@media (min-width: 960px) {
-  .search-overlay__close {
-    top: 26px;
-    font-size: 2.8rem;
-  }
-}
-.search-overlay__close:hover {
-  opacity: 1;
-}
-.search-overlay .one-half {
-  padding-bottom: 0;
-}
-
-.search-term {
-  width: 75%;
-  box-sizing: border-box;
-  border: none;
-  padding: 15px 0;
-  margin: 0;
-  background-color: transparent;
-  font-size: 1rem;
-  font-weight: 300;
-  outline: none;
-  color: #F95738;
-}
-@media (min-width: 530px) {
-  .search-term {
-    font-size: 1.5rem;
-  }
-}
-@media (min-width: 960px) {
-  .search-term {
-    width: 80%;
-    font-size: 3rem;
-  }
-}
-
-.body-no-scroll {
-  overflow: hidden;
-}
-
-.professor-cards {
-  margin: 0;
-  padding: 0;
-}
-.search-overlay .professor-cards {
-  padding-top: 21px;
-}
-
-.professor-card {
-  position: relative;
-  display: inline-block;
-  width: 200px;
-  margin-right: 15px;
-  background-color: #F95738;
-  overflow: hidden;
-}
-.search-overlay .professor-card {
-  width: 180px;
-}
-.professor-card__image {
-  display: block;
-  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
-}
-.professor-card:hover .professor-card__image {
-  opacity: 0.8;
-  transform: scale(1.1) rotate(4deg);
-}
-.professor-card__name {
-  font-weight: 300;
-  font-size: 0.9rem;
-  position: absolute;
-  bottom: 0;
-  color: #fff;
-  left: 0;
-  right: 0;
-  padding: 3px 10px;
-  background-color: rgba(240, 54, 19, 0.85);
-}
-.professor-card:hover .professor-card__name {
-  background-color: rgba(215, 46, 14, 0.85);
-}
-.professor-card__list-item {
-  display: inline-block;
-  list-style: none;
-}
-
 .headline {
   margin: 0;
   font-family: "Titillium Web", Arial, sans-serif;
@@ -1617,6 +1259,11 @@ body.admin-bar .search-overlay {
   text-align: left;
   font-family: Arial;
 }
+.full-width-split__inner .short-text {
+  color: #b3b3b3;
+  font-style: italic;
+  font-size: 1.5rem;
+}
 @media (min-width: 1350px) {
   .full-width-split__inner {
     width: 610px;
@@ -1678,8 +1325,9 @@ body.admin-bar .search-overlay {
 .page-links {
   position: relative;
   z-index: 1;
-  background-color: #FAF0CA;
+  background-color: #00A3ED;
   margin: 0 0 40px 0;
+  font-family: "Titillium Web", Arial, sans-serif;
 }
 @media (min-width: 767px) {
   .page-links {
@@ -1702,14 +1350,14 @@ body.admin-bar .search-overlay {
   background-color: #1B365D;
 }
 .page-links li {
-  border-top: 1px solid #f4de89;
+  border-top: 1px solid #0072a6;
 }
 .page-links li:first-child {
   border-top: none;
 }
 .page-links__active, .page-links .current_page_item {
   text-align: center;
-  background-color: #f4e6b1;
+  background-color: #0b93d1;
   color: #1B365D;
   font-weight: bold;
 }
@@ -1718,12 +1366,12 @@ body.admin-bar .search-overlay {
   text-align: center;
   padding: 17px 10px;
   text-decoration: none;
-  color: #1B365D;
+  color: white;
   transition: all 0.3s;
 }
 .page-links li a:hover {
   color: #142845;
-  background-color: #f2e3aa;
+  background-color: #0d8fcb;
 }
 
 .acf-map {

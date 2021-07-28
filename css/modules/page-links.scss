@@ -1,8 +1,9 @@
 .page-links {
   position: relative;
   z-index: 1;
-  background-color: $beige;
+  background-color: $lightBlue;
   margin: 0 0 40px 0;
+  font-family: 'Titillium Web', Arial,sans-serif;
   @include atSmallMedium {
     margin: 0 0 40px 20px;
     width: 300px;
@@ -25,7 +26,7 @@
   }
 
   li {
-    border-top: 1px solid adjust-color($beige, $lightness: -14%);
+    border-top: 1px solid adjust-color($lightBlue, $lightness: -14%);
   }
 
   li:first-child {
@@ -35,7 +36,7 @@
   &__active,
   & .current_page_item {
     text-align: center;
-    background-color: scale-color($beige, $lightness: -7%, $saturation: -10%);
+    background-color: scale-color($lightBlue, $lightness: -7%, $saturation: -10%);
     color: $mainBlue;
     font-weight: bold;
   }
@@ -45,12 +46,12 @@
     text-align: center;
     padding: 17px 10px;
     text-decoration: none;
-    color: $mainBlue;
+    color: white;
     transition: all 0.3s;
   }
 
   li a:hover {
     color: adjust-color($mainBlue, $lightness: -6%);
-    background-color: scale-color($beige, $lightness: -9%, $saturation: -12%);
+    background-color: scale-color($lightBlue, $lightness: -9%, $saturation: -12%);
   }
 }

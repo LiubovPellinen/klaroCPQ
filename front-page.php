@@ -6,7 +6,7 @@
         <h1 class="headline headline--large"></h1>
         <h2 class="headline headline--large-medium"><strong>Create complex quotes 80% faster!</strong></h2>
         <h3 class="headline headline--small">Digitalize your sales processes with Klaro</h3>
-        <a href="<?php echo get_post_type_archive_link('program');?>" class="btn btn--large btn--orange">Find our more</a>
+        <a href="" class="btn btn--large btn--orange">Find our more</a>
       </div>
 </div>
 <!-- Part 1 start -->
@@ -18,8 +18,8 @@
             <h1 > KlaroCPQ</h1>
             <div class="line" >_______________ </div> 
             <div>
-                <p style="color:#b3b3b3; white-spase:normal; font-style: italic; font-size: 1.5rem;">
-                    Klaro digital solutions support the sales process with automation. With Klaro digital sales tools, you take care of the sales process from lead acquisition to trade.
+                <p class="short-text">
+                  <?php echo get_field('aditional_text_block'); ?>
                 </p>
            </div>  
         </div>
