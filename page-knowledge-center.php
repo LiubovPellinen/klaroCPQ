@@ -7,7 +7,7 @@ pageBanner();
 <div class="page-links">
             <h2 class="page-links__title"><a href="<?php echo get_permalink($theParent); ?>"><?php echo get_the_title($theParent);?></a></h2>
             <ul class="min-list">
-               <li><a href="<?php echo get_post_type_archive_link('video');?>">Video</a></li>
+               <li><a href="<?php echo get_post_type_archive_link('video');?>">Videos</a></li>
                <li><a href="#">Guides</a></li>
             </ul>
         </div>

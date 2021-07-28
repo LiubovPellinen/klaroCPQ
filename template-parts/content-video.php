@@ -21,7 +21,7 @@
                 <?php echo get_field('description_video');?>
                 </p>
             </div>
-             <?php if (get_post_type()!='video') { ?> <p class="t-center no-margin"><a href="<?php echo get_post_type_archive_link('video');?>" class="btn btn--yellow">All video</a></p>
+             <?php if (get_post_type()!='video') { ?> <p class="t-center no-margin"><a href="<?php echo get_post_type_archive_link('video');?>" class="btn btn--orange">All video</a></p>
             <?php } ?>
         </div>
     </div>

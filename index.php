@@ -1,8 +1,11 @@
-<?php 
+<?php
 get_header();
+$photo=get_field('page_banner_background_image', 24)['sizes']['pageBanner'];
+$subtitle=get_field('page_banner_subtitle',24);
 pageBanner(array(
 'title'=>'Welcome to our Blog',
-'subtitle'=>'Keep up with our latest new'
+'subtitle'=> $subtitle,
+'photo'=> $photo
 ));
 ?>
 
@@ -31,7 +34,9 @@ pageBanner(array(
             </ul>
         </div>
 
-    <?php }?>
+    <?php }
+    
+    ?>
                                                     
 </div>
                                 

@@ -78,8 +78,10 @@ blockquote {
 }
 
 .section-break {
+  color: #ffffff;
+  width: 50%;
   border: none;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #fffcfc;
   margin: 2.5rem 0;
 }
 
@@ -967,6 +969,8 @@ body.login {
   height: 100%;
   max-width: 200px;
   width: 100%;
+  position: relative;
+  margin: 0;
 }
 
 .site-footer {
@@ -1470,7 +1474,6 @@ body.admin-bar .search-overlay {
   }
 }
 .headline--small-plus {
-  font-family: "Roboto", sans-serif;
   font-size: 1.6875rem;
   font-weight: 400;
   margin-bottom: 1.9rem;
@@ -1499,6 +1502,13 @@ body.admin-bar .search-overlay {
 }
 .headline--post-title a:hover {
   text-decoration: underline;
+}
+
+.video-title {
+  text-align: left;
+  padding-left: 40px;
+  margin-bottom: 0px;
+  font-family: "Titillium Web", Arial, sans-serif;
 }
 
 .generic-content p,
@@ -1571,7 +1581,7 @@ body.admin-bar .search-overlay {
 }
 @media (min-width: 960px) {
   .full-width-split__one {
-    padding: 40px;
+    padding: 30px;
   }
 }
 @media (min-width: 960px) {
@@ -1585,7 +1595,7 @@ body.admin-bar .search-overlay {
 }
 @media (min-width: 960px) {
   .full-width-split__two {
-    padding: 40px;
+    padding: 30px;
   }
 }
 .full-width-split__inner {
