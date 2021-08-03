@@ -96,5 +96,6 @@ function wpse_category_single_template( $single_template ) {
   return $single_template;
 }
 add_filter( 'single_template', 'wpse_category_single_template' );
+add_filter( 'wpseo_metabox_prio', function() { return 'low'; } );
 ?>
 
