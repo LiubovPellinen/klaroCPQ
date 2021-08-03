@@ -3,7 +3,7 @@ get_header();
 $photo=get_field('page_banner_background_image', 24)['sizes']['pageBanner'];
 $subtitle=get_field('page_banner_subtitle',24);
 pageBanner(array(
-'title'=>'Welcome to our Blog',
+'title'=>'Our Guides',
 'subtitle'=> $subtitle,
 'photo'=> $photo
 ));
@@ -17,10 +17,8 @@ pageBanner(array(
     ?>
         <div  class="one-fourth-blog"> 
             <ul>
-                <li> 
-                    <?php if ($backgroundImg[3]!=false) {?>
+                <li>
                     <img  src="<?php echo $backgroundImg[0]; ?>"></img>  
-                    <?php } ?>
                 </li>
 
                 <li > 

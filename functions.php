@@ -80,4 +80,21 @@ function klaro_custom_logo_setup() {
 }
 add_theme_support( 'custom-logo' );
 
+   
+
+function wpse_category_single_template( $single_template ) {
+  global $post;
+  $all_cats = get_the_category();
+
+  if ( in_category('guide') ) {
+      if ( file_exists(get_template_directory() . "/single-category-guide.php") ) {
+        return get_template_directory() . "/single-category-guide.php";
+      } else {
+        return get_template_directory() . "/single.php";
+      }
+  }
+  return $single_template;
+}
+add_filter( 'single_template', 'wpse_category_single_template' );
 ?>
+

@@ -24,11 +24,7 @@
     background-color: #fff;
   }
 
-  &--beige {
-    background-color: $beige;
-  }
-
-  p:last-of-type {
+   p:last-of-type {
     margin-bottom: 0;
   }
 }
@@ -39,7 +35,7 @@
   margin: 0;
   font-size: 3rem;
   font-weight: 200;
- //background:  url(../images/logo.png) no-repeat 0px 0px;
+  font-family: 'Titillium Web', Arial,sans-serif;
 }
 
 .klaro-logo-text strong {
@@ -89,6 +85,7 @@
 .c-blue {
   color: $mainBlue;
 }
+
 .c-white {
   color: #fff;
 }

@@ -2,10 +2,12 @@
       <div class="site-footer__inner container container--narrow">
         <div class="group">
           <div class="site-footer__col-one">
-            <h1 class="klaro-logo-text klaro-logo-text--alt-color">
+            <!--<h1 class="klaro-logo-text klaro-logo-text--alt-color">
               <strong>Klaro</strong> CPQ
-            </h1>
-            
+            </h1>-->
+            <!--<div class="site-branding">-->
+            <img src="<?php echo get_theme_file_uri('/images/logo_footer_2.png') ?>" ></img>
+           <!--</div>-->
           </div>
 
           <div class="site-footer__col-two-three-group">
@@ -28,7 +30,7 @@
                   </li>
                   <li>      
                  
-                  <li><a href="#">Tietosuojaseloste</a></li>
+                  <li><a href="<?php echo site_url('/privacy-policy'); ?>">Privacy Policy</a></li>
                 </ul>
               
             </div>
