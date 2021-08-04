@@ -7,9 +7,15 @@
             $replace="player.";
             $link=substr_replace($link,$replace,8,0);
             $replace="video/";
-            $link=substr_replace($link,$replace,25,0);
+            $link=substr_replace($link,$replace,25,0).'?byline=0&portrait=0';
             ?>
-            <iframe src="<?php echo $link ?>" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+            
+            <div style="padding:56.25% 0 0 0;position:relative;">
+                <iframe src="<?php echo $link ?>" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+          
         </div>
     </div>
 

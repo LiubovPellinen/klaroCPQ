@@ -1,11 +1,14 @@
-<?php get_header(); ?>
+<?php get_header();
+
+$backgroundImg =get_field('page_banner_background_image',5, true)
+?>
 <div class="page-banner">
-    <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('/images/test.jpg')?>);">
+    <div class="page-banner__bg-image" style="background-image: url(<?php echo $backgroundImg['url'];?>);">
     </div>
       <div class="page-banner__content container t-right c-white">
         <h1 class="headline headline--large"></h1>
-        <h2 class="headline headline--large-medium"><strong>Create complex quotes 80% faster!</strong></h2>
-        <h3 class="headline headline--small">Digitalize your sales processes with Klaro</h3>
+        <h2 class="headline headline--large-medium"><strong><?php echo get_field('page_banner_title');?></strong></h2>
+        <h3 class="headline headline--small"><?php echo get_field('page_banner_subtitle');?></h3>
         <a href="<?php echo site_url('/solutions'); ?>" class="btn btn--large btn--orange">Find our more</a>
       </div>
 </div>
@@ -30,7 +33,9 @@
         <div class="full-width-split__inner">
          
           <div class="generic-content">
-           <?php the_content();?>
+           <?php 
+               the_content();           
+           ?>
           </div>
           <p class="t-center no-margin"><a href="<?php echo site_url('/solutions'); ?>" class="btn btn--orange">Read more</a></p>
         </div>

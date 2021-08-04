@@ -3,12 +3,12 @@
 @import "../node_modules/@glidejs/glide/dist/css/glide.core.min.css";
 
 /* SASS and Global'ish Stuff */
-@import "base/variables";
+@import "base/variables-colors";
 @import "base/baseline";
 @import "base/utility-classes";
 
 /* BEM Blocks */
-@import "modules/shame";
+@import "modules/parts-of-content";
 @import "modules/btn";
 @import "modules/site-header";
 @import "modules/site-footer";

@@ -29,7 +29,7 @@ img {
 }
 
 a {
-  color: $mainBlue;
+  color: $lightOrange;
   
 }
 
@@ -41,6 +41,7 @@ p,
 ul,
 ol {
   margin: 0 0 1.65em 0;
+  
 }
 
 p,
@@ -55,8 +56,14 @@ blockquote{
   border-left-style: solid;
   border-left-color: rgb(202, 202, 202);
 }
+.pagination_main{
+  text-align:center;
+   margin-bottom:30px;
+  
+}
 .pagination {
   display: inline-block;
+  
  
 }
 

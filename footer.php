@@ -14,7 +14,7 @@
             <div class="site-footer__col-two">
                       
                 
-                <ul style="list-style-type: none;">
+                <ul >
                   <li ><p>
                           puh. +358401766204
                           info@klarocpq.fi
@@ -37,7 +37,7 @@
 
             <div class="site-footer__col-three">
                           
-                <ul style="list-style-type: none;">
+                <ul >
                   <li>
                     <p>
                     Y-tunnus: 2994695-9

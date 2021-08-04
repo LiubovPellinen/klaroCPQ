@@ -1,14 +1,20 @@
 <?php
 function pageBanner($args = NULL) {
+  $title=get_field('page_banner_title');
+  $subtitle=get_field('page_banner_subtitle');
+  if (!$args['title']){
+      if ($title) {
+          $args['title'] = $title;
+      } else {
+            $args['title'] = get_the_title();
+        }
+  }
   
-  if (!$args['title']) {
-    $args['title'] = get_the_title();
+  if (!$args['subtitle']){
+      if ($subtitle) {
+          $args['subtitle'] = get_field('page_banner_subtitle');
+      }
   }
-
-  if (!$args['subtitle']) {
-    $args['subtitle'] = get_field('page_banner_subtitle');
-  }
-
   if (!$args['photo']) {
    
      $test=get_field('page_banner_background_image');

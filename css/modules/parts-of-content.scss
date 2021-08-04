@@ -1,0 +1,125 @@
+.page-section {
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  @include atSmall {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+   p:last-of-type {
+    margin-bottom: 0;
+  }
+}
+.one-half,
+.one-third,
+.one-fourth,
+.one-fifth,
+.one-sixth {
+  padding-bottom: 1.6rem;
+  padding-right: 50px;
+  padding-left: 50px;
+  
+}  
+
+.one-fourth-blog, .one-third-testimonials{
+  padding-top:1.6rem;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top:30px;
+  margin-left:4%;
+  margin-right: 4%;
+  border-style: solid;
+  border-width: 4px;
+  border-color: rgb(190, 190, 190);
+  font-family: 'Arial';
+  white-space: normal;
+  float: left;
+    box-sizing: border-box;
+    ul { list-style-type: none;
+        padding-left:5px;
+    }
+    a {
+      text-decoration:none;
+      
+    } 
+    
+
+    img {
+         width:100%;
+    }
+    h2{
+      font-family: 'Titillium Web', sans-serif;
+      a{
+      color:$mainBlue;
+      }
+    } 
+    h2, p {
+      text-align: left;
+      
+    }
+
+}
+.one-third-testimonials{
+  border-color: white;
+  h2 a {
+      color: $lightBlue;
+       
+  }
+  p {
+    color: white;
+    font-family: 'Arial';
+  }  
+}
+
+.row{
+  background-color: #00a3ed; /* for light blue part on front-page and solution page*/
+  
+}
+@include atMedium {
+  .row {
+    //margin-right: -50px;
+    background-color: #00a3ed; /* for light blue part on front-page and solution page*/
+  }
+  
+  .one-half,
+  .one-third,
+  .two-thirds,
+  .one-fourth,
+  .one-fifth,
+  .one-sixth {
+    padding-bottom: 0;
+    padding-right: 50px;
+    padding-left: 50px;
+    float: left;
+    box-sizing: border-box;
+    
+  }
+  
+  .two-thirds {
+    width: 66.66%;
+  }
+  .one-half {
+    width: 50%;
+  }
+  .one-third, .one-third-testimonials {
+    width: 33.33%;
+  }
+  .one-fourth,.one-fourth-blog{
+    width: 25%;
+  }
+  .one-quarter {
+    width: 25%;
+  }
+  .one-fifth {
+    width: 24%;
+  }
+  .one-sixth {
+    width: 16.66%;
+  }
+}
+
+/* Make Top WP Admin Bar Fixed on Mobile */
+@media screen and (max-width: 600px) {
+  #wpadminbar {
+    position: fixed;
+  }
+}

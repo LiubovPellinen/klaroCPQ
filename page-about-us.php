@@ -1,8 +1,6 @@
 <?php 
 get_header();
-pageBanner(array(
-        'title'=>'KlaroCPQ is a success story for long-time development',
-));
+pageBanner();
 ?>
 
 <div class="container container--narrow page-section">

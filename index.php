@@ -31,7 +31,7 @@ pageBanner(array(
                         ?> 
                     </p>
 
-                    <p><a href="<?php the_permalink(); ?>" class="c-orange">Read more</a></p>
+                    <p><a href="<?php the_permalink(); ?>">Read more</a></p>
                 </li> 
             </ul>
         </div>

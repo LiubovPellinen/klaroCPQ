@@ -1,4 +1,4 @@
-<div style="text-align:center; margin-top:30px;">
+<div class="pagination_main">
 <?php 
 
 $pages=paginate_links( array('type'  => 'array'));

@@ -3,8 +3,8 @@
         <div class="title-on-lightBlue-main">
             <h1 >How KlaroCPQ is implemented</h1>
         </div>
-
-        <div  class="one-fourth"> 
+        
+        <div  class="one-fifth"> 
             <div class="pic-on-lightBlue">
                 <img src=" <?php echo get_theme_file_uri('/images/icon-maarittely.png') ?>"></img>  
             </div>
@@ -14,7 +14,7 @@
             </div> 
         </div>
 
-        <div class="one-fourth">
+        <div class="one-fifth">
             <div class="pic-on-lightBlue">  
                 <img src=" <?php echo get_theme_file_uri('/images/icon-mallinnus.png') ?>"></img>
             </div>
@@ -24,7 +24,7 @@
             </div>
         </div> 
 
-        <div class="one-fourth">
+        <div class="one-fifth">
             <div class="pic-on-lightBlue">
                 <img src=" <?php echo get_theme_file_uri('/images/icon-testaus.png') ?>"></img>
             </div>
@@ -34,7 +34,7 @@
             </div>
         </div>
 
-        <div class="one-fourth">
+        <div class="one-fifth">
             <div class="pic-on-lightBlue">
                 <img src=" <?php echo get_theme_file_uri('/images/icon-kaytto.png') ?>"></img>
             </div>
@@ -43,5 +43,5 @@
                 <p>We complete the installation and any integration work needed.</p>
             </div>
         </div>
-   
+
 </div>

@@ -2,7 +2,6 @@
 get_header();
 pageBanner(array(
 'title'=>'Video',
-'subtitle'=>'',
 ));
 
 while (have_posts()){

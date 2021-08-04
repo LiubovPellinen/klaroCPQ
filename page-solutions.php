@@ -1,8 +1,6 @@
 <?php 
 get_header();
-pageBanner(array(
-        'title'=>'Quoting now takes two days instead of two weeks.',
-));
+pageBanner();
 ?>
 
 <div class="container container--narrow page-section">

@@ -18,7 +18,7 @@ pageBanner(array(
          
  <?php  }
 
-    echo paginate_links();
+get_template_part('template-parts/content', 'pagination'); 
 ?>
 
 </div>

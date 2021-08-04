@@ -59,24 +59,16 @@
   &__col-two {
     width: 50%;
     float: left;
+    ul{
+      list-style-type: none;
+    }
   }
   &__col-three {
     width: 50%;
     float: left;
-  }
-  &__col-four {
-    padding-top: 20px;
-    width: 85%;
-    margin: 0 auto;
-    clear: both;
-    text-align: left;
-    @include atMedium {
-      padding-top: 0;
-      margin: 0;
-      clear: none;
-      text-align: left;
-      width: 25%;
-      float: right;
+    ul{
+    list-style-type: none;
     }
   }
+  
 }
